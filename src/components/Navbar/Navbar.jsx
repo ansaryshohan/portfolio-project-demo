@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png";
 const Navbar = ({ onScrollHandler }) => {
   return (
     <nav className="w-full bg-transparent fixed">
-      <div className=" flex justify-between items-center gap-3 container h-20 py-2 lg:px-20">
+      <div className=" flex justify-between items-center gap-3 container h-20 py-2 ">
         {/* hamburger menu */}
         <div className="w-1/3 lg:hidden">
         <div className="bg-primary-theme-color flex items-center justify-center  text-white py-1 px-2 rounded-md  cursor-pointer w-10 h-8">
