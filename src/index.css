@@ -42,20 +42,6 @@
   background: linear-gradient(to left, rgba(235,212,214,1) 1%,rgba(255,254,254,1) 37%,rgba(244,241,209,1) 63%,rgba(215,242,250,1) 100%);
 }
 
-.moving-icon{
-animation-name: iconAnimation;
-animation-duration: 3s;
-animation-timing-function: linear;
-animation-direction: alternate;
-animation-iteration-count: infinite;
+.hero-icon{
+  transform: translate(10px,30px);
 }
- @keyframes iconAnimation {
-
-  from{
-    transform: translate(-10%,-10%);
-  }
-  to{
-    transform: translate(20%,20%);
-  }
-  
- }
