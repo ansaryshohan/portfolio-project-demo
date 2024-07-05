@@ -3,10 +3,12 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const SingleServiceCard = ({singleService}) => {
   const{title,description,icon}= singleService;
   return (
-    <div className="flex flex-col gap-8 items-center justify-center text-center px-4 py-10 border-2 border-border-color rounded-2xl w-full lg:w-1/3">
+    <div className="flex flex-col gap-8 items-center justify-center text-center px-4 pt-10 pb-16 border-2 border-border-color rounded-2xl w-full lg:w-1/3">
       {/* icon div of the card */}
-      <div className="service-icon-div hover:bg-primary-theme-color hover:text-white h-32 w-32 rounded-full flex justify-center items-center text-6xl font-normal text-service-golden-color">
-      <i className={`fi ${icon}`}></i>
+      <div className="service-icon-div hover:bg-primary-theme-color hover:text-white h-32 w-32 rounded-full flex justify-center items-center text-5xl font-normal text-service-golden-color">
+        <div className="text-center">
+           <i className={`fi ${icon}`}></i>
+        </div>
       </div>
       {/* texts of the card */}
       <div className="flex flex-col gap-5 justify-center items-center">

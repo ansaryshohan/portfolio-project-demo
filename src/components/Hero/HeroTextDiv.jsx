@@ -9,8 +9,8 @@ const HeroTextDiv = () => {
           <h1 className="text-heading-color text-7xl font-bold">
             I Am Ronald.
           </h1>
-          <h4 className="text-primary-theme-color text-4xl font-semibold">
-            UI/UX Designer
+          <h4 className="text-primary-theme-color text-2xl font-semibold">
+            Front-end REACT Developer
           </h4>
           <p className="text-light-text-color text-xl font-medium">
             Must explain to how all this mistaken idea denouncing pleasure pain

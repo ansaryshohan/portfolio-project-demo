@@ -34,7 +34,7 @@ const HeroImageDiv = () => {
             </div>
             {/* icon images */}
             <div className="absolute top-12 left-4 hero-icon">
-              <HeroIconDiv icon={psIcon} />
+            <HeroIconDiv icon={psIcon}/>
             </div>
             <div className="absolute top-12 right-5 hero-icon">
               <HeroIconDiv icon={aiIcon} />

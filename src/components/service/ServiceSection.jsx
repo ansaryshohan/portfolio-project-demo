@@ -9,7 +9,7 @@ import ServiceSectionHeader from "./ServiceSectionHeader";
 import SingleServiceCard from "./SingleServiceCard";
 
 const ServiceSection = forwardRef((props, ref) => {
-  const [activeMenu, setActiveMenu] = useState(2);
+  const [activeMenu, setActiveMenu] = useState(1);
 
   // === service data processing====
   let serviceData;
