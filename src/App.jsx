@@ -3,10 +3,14 @@ import "./App.css";
 import HeroSection from "./components/Hero/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 import Blog from "./components/blog/Blog";
-import PortfolioSection from "./components/portfolioSection/PortfolioSection";
+import PortfolioSection from "./components/portfolio/PortfolioSection";
+import AboutSection from "./components/about/AboutSection";
+import ServiceSection from "./components/service/ServiceSection";
 
 function App() {
   const heroRef = useRef();
+  const aboutRef = useRef();
+  const serviceRef = useRef();
   const blogRef = useRef();
   const portfolioRef = useRef();
 
@@ -19,11 +23,11 @@ function App() {
         break;
       }
       case 2: {
-        clickedSection = blogRef;
+        clickedSection = aboutRef;
         break;
       }
       case 3: {
-        clickedSection = portfolioRef;
+        clickedSection = serviceRef;
         break;
       }
       default: {
@@ -32,13 +36,15 @@ function App() {
       }
     }
     // console.log(clickedSection);
-    window.scrollTo({top:clickedSection.current.offsetTop,behavior:"smooth"})
+    window.scrollTo({top:clickedSection.current.offsetTop-80, behavior:"smooth"})
   };
 
   return (
     <div className="min-h-screen w-full font-Inter">
       <Navbar onScrollHandler={handleScroll} />
       <HeroSection ref={heroRef} />
+      <AboutSection ref={aboutRef}/>
+      <ServiceSection ref={serviceRef}/>
       <Blog ref={blogRef} />
       <PortfolioSection ref={portfolioRef} />
     </div>

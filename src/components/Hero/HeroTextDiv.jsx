@@ -3,7 +3,7 @@ import { IoArrowForward } from "react-icons/io5";
 const HeroTextDiv = () => {
   return (
     <div className="text-center lg:text-left flex flex-col gap-6 lg:w-1/2">
-          <h3 className="text-secondary-theme-color text-6xl font-bold">
+          <h3 className="text-golden-theme-color text-6xl font-bold">
             Hello,
           </h3>
           <h1 className="text-heading-color text-7xl font-bold">
