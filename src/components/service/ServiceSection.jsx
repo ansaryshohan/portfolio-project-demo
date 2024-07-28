@@ -1,4 +1,4 @@
-import { forwardRef, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import {
   getDesignData,
   getDevelopmentData,
@@ -7,9 +7,16 @@ import {
 import TopHeading from "../shared/TopHeading";
 import ServiceSectionHeader from "./ServiceSectionHeader";
 import SingleServiceCard from "./SingleServiceCard";
+import { useInView } from "framer-motion";
 
-const ServiceSection = forwardRef((props, ref) => {
-  const [activeMenu, setActiveMenu] = useState(1);
+const ServiceSection = forwardRef(({setCurrentActiveNav}, ref) => {
+  const [activeMenu, setActiveMenu] = useState(2);
+  const isInView= useInView(ref,{amount:.4});
+
+  useEffect(() => {
+    isInView?setCurrentActiveNav(3):setCurrentActiveNav(0);
+  }, [isInView,setCurrentActiveNav])
+  
 
   // === service data processing====
   let serviceData;

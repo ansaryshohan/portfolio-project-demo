@@ -3,9 +3,9 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { FaArrowDown } from "react-icons/fa";
 import logo from "../../assets/logo.png";
 
-const Navbar = ({ onScrollHandler }) => {
+const Navbar = ({ onClickScrollHandler, currentActiveNav }) => {
   const [navColor, setNavColor] = useState(false);
-
+  // ======= navbar background color change on scroll =======
   useEffect(() => {
     function scrollFunc() {
       if (window.scrollY >= 100) {
@@ -41,21 +41,49 @@ const Navbar = ({ onScrollHandler }) => {
             <img src={logo} alt="" className="w-full" />
           </div>
           <div className="font-bold text-2xl md:text-3xl lg:text-5xl text-heading-color">
-            Elito.
+            Ansary.
           </div>
         </div>
 
         {/* navbar menu */}
         <div className=" h-full">
           <ul className="hidden lg:flex justify-between items-center gap-2 cursor-pointer capitalize font-medium text-base text-black/80 px-4 navMenu h-full">
-            <li className="active" onClick={() => onScrollHandler(1)}>
+            <li
+              className={`${currentActiveNav === 1 ? "active" : ""}`}
+              onClick={() => onClickScrollHandler(1)}
+            >
               home
             </li>
-            <li onClick={() => onScrollHandler(2)}>about</li>
-            <li onClick={() => onScrollHandler(3)}>service</li>
-            <li onClick={() => onScrollHandler(4)}>portfolio</li>
-            <li onClick={() => onScrollHandler(5)}>contact</li>
-            <li onClick={() => onScrollHandler(6)}>blog</li>
+            <li
+              className={`${currentActiveNav === 2 ? "active" : ""}`}
+              onClick={() => onClickScrollHandler(2)}
+            >
+              about
+            </li>
+            <li
+              className={`${currentActiveNav === 3 ? "active" : ""}`}
+              onClick={() => onClickScrollHandler(3)}
+            >
+              service
+            </li>
+            <li
+              className={`${currentActiveNav === 4 ? "active" : ""}`}
+              onClick={() => onClickScrollHandler(4)}
+            >
+              portfolio
+            </li>
+            <li
+              className={`${currentActiveNav === 5 ? "active" : ""}`}
+              onClick={() => onClickScrollHandler(5)}
+            >
+              contact
+            </li>
+            <li
+              className={`${currentActiveNav === 6 ? "active" : ""}`}
+              onClick={() => onClickScrollHandler(6)}
+            >
+              blog
+            </li>
           </ul>
         </div>
 

@@ -1,10 +1,17 @@
-import { forwardRef } from "react";
+import { forwardRef, useEffect } from "react";
 import leftShape from "../../assets/about-shape1.png";
 import rightShape from "../../assets/about-shape2.png";
 import AboutSkillCards from "./AboutSkillCards";
 import LeftAboutSection from "./LeftAboutSection";
+import { useInView } from "framer-motion";
 
-const AboutSection = forwardRef((props, ref) => {
+const AboutSection = forwardRef(({setCurrentActiveNav}, ref) => {
+  const isInView= useInView(ref,{amount:.4});
+
+  useEffect(() => {
+    isInView?setCurrentActiveNav(2):setCurrentActiveNav(0);
+  }, [isInView,setCurrentActiveNav])
+
   return (
     <div
       className="w-full min-h-screen gradient-to-left relative pt-60 pb-32 z-10"

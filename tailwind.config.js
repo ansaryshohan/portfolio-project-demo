@@ -10,6 +10,7 @@ export default {
         "primary-text-color": "#585858", //dark gray
         "light-text-color": "#7b7b7b", //light gray
         "heading-color": "#202020", //black
+        "work-position-color":"#dd584f",
         "border-color":"#ebebeb",
         "border-color-s2":"#e4ebf2",
         "service-golden-color":"#dfca08"
