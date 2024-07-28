@@ -13,17 +13,19 @@ export default {
         "work-position-color":"#dd584f",
         "border-color":"#ebebeb",
         "border-color-s2":"#e4ebf2",
+        "footer-line-color":"rgb(255 255 255 / 5%)",
         "service-golden-color":"#dfca08"
         
       },
       backgroundColor:{
           "primary-bgColor":"#F8F8F8",
           "service-bgColor":"#FFFBFB",
-          "section-bgColor":"#f3f8ff"
+          "section-bgColor":"#f3f8ff",
+          "footer-bgColor":"#202020"
       },
       container: {
         center: true,
-        padding: "80px",
+        // padding: "80px",
       },
       fontFamily: {
         Inter: ["Inter", "sans-serif"],

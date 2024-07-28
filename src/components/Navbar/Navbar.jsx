@@ -27,7 +27,7 @@ const Navbar = ({ onClickScrollHandler, currentActiveNav }) => {
         navColor ? "bg-white" : "bg-transparent"
       } fixed z-50`}
     >
-      <div className=" flex justify-between items-center gap-3 container h-20 py-2 ">
+      <div className=" flex justify-between items-center gap-3 container h-20 py-2 md:px-20 ">
         {/* hamburger menu */}
         <div className="w-1/3 lg:hidden">
           <div className="bg-primary-theme-color flex items-center justify-center  text-white py-1 px-2 rounded-md  cursor-pointer w-10 h-8">

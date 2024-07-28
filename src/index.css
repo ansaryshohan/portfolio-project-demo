@@ -170,3 +170,16 @@
   object-fit: cover;
 }
 /* ==== Portfolio section ends===== */
+/* ==== Footer section starts===== */
+.footer-wrapper{
+  background: radial-gradient(circle at top, rgba(47,74,55,1) 0%, rgba(32, 32, 32 ,1) 100%);
+}
+.lower-footer{
+  background: linear-gradient(
+    to right,
+    rgb(32, 32, 32 ,.7) 0%,
+    rgba(7, 7, 7, 0.822) 50%,
+    rgba(32, 32, 32 ,.7) 100%
+  );
+}
+/* ==== Footer section ends===== */

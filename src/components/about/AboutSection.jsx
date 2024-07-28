@@ -26,7 +26,7 @@ const AboutSection = forwardRef(({setCurrentActiveNav}, ref) => {
         <img src={rightShape} alt="background curve shape of about" />
       </div>
       {/* content of this section */}
-      <div className="container flex flex-col lg:flex-row lg:justify-between lg:items-center gap-10 h-full">
+      <div className="container md:px-20 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-10 h-full">
         {/* image type text div -left section */}
         <LeftAboutSection />
         {/* text div of about -right section */}

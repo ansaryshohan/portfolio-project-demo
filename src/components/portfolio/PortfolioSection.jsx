@@ -11,7 +11,7 @@ const PortfolioSection = forwardRef(({setCurrentActiveNav}, ref) => {
 
   return (
     <section className="portfolio-section w-full min-h-screen pt-2" ref={ref}>
-      <div className="container mt-40">
+      <div className="container mt-40 md:px-20">
         {/* upper text section */}
         <div className="flex items-center justify-between gap-10 pt-10 pb-20">
           <div>

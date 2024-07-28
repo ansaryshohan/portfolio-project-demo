@@ -7,6 +7,7 @@ import PortfolioSection from "./components/portfolio/PortfolioSection";
 import ServiceSection from "./components/service/ServiceSection";
 import ContactSection from "./components/contact/ContactSection";
 import WorkExperienceSection from "./components/workExperiance/WorkExperienceSection";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const heroRef = useRef();
@@ -53,11 +54,12 @@ function App() {
       }
     }
     
-    setCurrentActiveNav(sectionId);
     window.scrollTo({
       top: clickedSection.current.offsetTop - 80,
       behavior: "smooth",
     });
+    
+    setCurrentActiveNav(sectionId);
   };
 
   return (
@@ -75,6 +77,7 @@ function App() {
       <PortfolioSection ref={portfolioRef} setCurrentActiveNav={setCurrentActiveNav} />
       <ContactSection ref={contactRef} setCurrentActiveNav={setCurrentActiveNav}/>
       <Blog ref={blogRef} setCurrentActiveNav={setCurrentActiveNav}/>
+      <Footer onClickScrollHandler={handleOnClickScroll}/>
     </div>
   );
 }

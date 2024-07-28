@@ -1,10 +1,20 @@
+import LowerFooter from "./LowerFooter";
+import UpperContentFooter from "./UpperContentFooter";
+import UpperFooter from "./UpperFooter";
 
-
-const Footer = () => {
+const Footer = ({onClickScrollHandler}) => {
   return (
-    <div>
-      <h1 className="">footer section</h1>
-    </div>
+    <footer className="pl-4  dark:bg-gray-100 dark:text-gray-800 bg-footer-bgColor text-white relative">
+      {/* red div content footer */}
+      <UpperContentFooter />
+
+      <section className="container md:pl-20 divide-y divide-footer-line-color footer-wrapper pt-40">
+        {/* upper footer section */}
+        <UpperFooter  onClickScrollHandler={onClickScrollHandler}/>
+        {/* lower footer section */}
+        <LowerFooter />
+      </section>
+    </footer>
   );
 };
 

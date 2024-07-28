@@ -5,7 +5,7 @@ import SingleWorkExperience from "./SingleWorkExperience";
 function WorkExperienceSection() {
   return (
     <section className="bg-primary-bgColor pb-20">
-      <div className="container">
+      <div className="container md:px-20">
         {/* === top heading og the section=== */}
         <TopHeading
           title={"My Work Experience"}

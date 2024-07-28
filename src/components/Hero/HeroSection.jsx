@@ -5,7 +5,6 @@ import { useInView } from "framer-motion"
 
 const HeroSection = forwardRef(({setCurrentActiveNav}, ref) => {
   const isInView= useInView(ref,{amount:.4});
-  console.log(isInView)
 
   useEffect(() => {
     isInView ? setCurrentActiveNav(1):setCurrentActiveNav(1);
@@ -16,7 +15,7 @@ const HeroSection = forwardRef(({setCurrentActiveNav}, ref) => {
       className="w-full min-h-screen gradient-to-right pt-48 pb-20 "
       ref={ref}
     >
-      <div className="flex flex-col justify-between items-center gap-10 lg:flex-row container w-full h-full">
+      <div className="flex flex-col justify-between items-center gap-10 lg:flex-row container md:px-20 w-full h-full">
         {/* text of hero */}
 
         <HeroTextDiv />

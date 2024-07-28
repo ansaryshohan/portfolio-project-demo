@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 function SingleWorkExperience({ work }) {
   const { years, companyLogo, position, location, jobType } = work;
   return (
-    <div className="flex justify-around items-center  work-experience-card">
+    <div className="flex flex-col justify-center align-center gap-8 md:flex-row md:justify-around md:items-center md:gap-5 work-experience-card">
       {/* years */}
       <div className="w-[20%]">
         <h3 className="text-heading-color text-3xl text-center font-bold leading-9">{years}</h3>
