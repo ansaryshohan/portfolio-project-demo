@@ -18,7 +18,7 @@ export default {
         
       },
       backgroundColor:{
-          "primary-bgColor":"#F8F8F8",
+          "primary-bgColor":"#F8F8F8", //mostly used
           "service-bgColor":"#FFFBFB",
           "section-bgColor":"#f3f8ff",
           "footer-bgColor":"#202020"

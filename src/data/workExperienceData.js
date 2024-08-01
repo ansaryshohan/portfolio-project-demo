@@ -1,17 +1,16 @@
-const getImageUrl=(companyLogo)=>{
-  return new URL(`../assets/${companyLogo}`,import.meta.url).href;
-}
+import { getImageUrl } from "../utils/getImageUrl";
+
 
 const workExperienceData = [
   {
-    id:1,
+    id: 1,
     years: "2021-2022",
     companyLogo: getImageUrl("company1.png"),
     position: "Web Developer Intern",
     location: "Mohakhali,Dhaka",
   },
   {
-    id:2,
+    id: 2,
     years: "2022-2023",
     companyLogo: getImageUrl("company2.png"),
     position: "Junior Web Developer",
@@ -19,7 +18,7 @@ const workExperienceData = [
     jobType: "remote",
   },
   {
-    id:3,
+    id: 3,
     years: "2023-Present",
     companyLogo: getImageUrl("company3.png"),
     position: "Web Developer",

@@ -1,7 +1,7 @@
 import { Autoplay, HashNavigation, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide} from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import portfolio1 from "../../assets/portfolio-1.jpg";
-import SwiperButtons from "./SwiperButtons";
+import PortfolioSwiperButtons from "./PortfolioSwiperButtons";
 
 const PortfolioSlider = () => {
   return (
@@ -10,8 +10,7 @@ const PortfolioSlider = () => {
         slidesPerView={3}
         spaceBetween={30}
         autoplay={true}
-        modules={[Navigation, HashNavigation,Autoplay]}
-        
+        modules={[Navigation, HashNavigation, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide data-hash="slide1" className="">
@@ -50,7 +49,7 @@ const PortfolioSlider = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperButtons/>
+        <PortfolioSwiperButtons />
       </Swiper>
     </>
   );
