@@ -140,7 +140,7 @@
 
 /* ==== Portfolio section starts===== */
 .portfolio-section {
-  background-color: linear-gradient(180deg, #fff, #f8f8f8);
+  background: linear-gradient(180deg, #F9F9F8, #cfcf97);
   background-image: url("./assets/portpofio-line-1.png"),
     url("./assets/portfolio-line-2.png");
   background-repeat: no-repeat;
@@ -170,6 +170,22 @@
   object-fit: cover;
 }
 /* ==== Portfolio section ends===== */
+
+/* ==== Review section starts===== */
+  .review-bg-shape{
+    background: #e9e9e9;
+    clip-path: polygon(0 0, 100% 0, 55% 100%, 0 100%);
+    height: 110%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    top: -70px;
+    width: 40%;
+    z-index: 11;
+  }
+  
+/* ==== Review section ends===== */
+
 /* ==== Footer section starts===== */
 .footer-wrapper{
   background: radial-gradient(circle at top, rgba(47,74,55,1) 0%, rgba(32, 32, 32 ,1) 100%);

@@ -4,6 +4,7 @@ import HeroSection from "./components/Hero/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 import AboutSection from "./components/about/AboutSection";
 import Blog from "./components/blog/Blog";
+import ReviewSection from "./components/clientSay/ReviewSection";
 import ContactSection from "./components/contact/ContactSection";
 import PortfolioSection from "./components/portfolio/PortfolioSection";
 import PricingSection from "./components/pricing/PricingSection";
@@ -80,6 +81,7 @@ function App() {
         ref={portfolioRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />
+      <ReviewSection />
       <PricingSection />
       <ContactSection
         ref={contactRef}

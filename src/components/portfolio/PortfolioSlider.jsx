@@ -1,54 +1,45 @@
-import { Autoplay, HashNavigation, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import portfolio1 from "../../assets/portfolio-1.jpg";
+import portfolioData from "../../data/portfolioData";
+import PortfolioCard from "./PortfolioCard";
 import PortfolioSwiperButtons from "./PortfolioSwiperButtons";
 
 const PortfolioSlider = () => {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        loop={true}
+        slidesPerView={1}
         spaceBetween={30}
-        autoplay={true}
-        modules={[Navigation, HashNavigation, Autoplay]}
-        className="mySwiper"
+        breakpoints={{
+          640:{
+            slidesPerView:2,
+            spaceBetween:30
+          },
+          768:{
+            slidesPerView:3,
+            spaceBetween:30
+          },
+          1024:{
+            slidesPerView:3,
+            spaceBetween:30
+          },
+        }}
+        autoplay={{
+          delay: 800,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        }}
+        speed={1500}
+        modules={[ Autoplay]}
+        className="mySwiper "
       >
-        <SwiperSlide data-hash="slide1" className="">
-          <div className="w-full h-[80%] overflow-hidden">
-            <img src={portfolio1} alt="" className="w-full h-[200px]" />
-            <div>
-              <h2>this is portfolio</h2>
-              <button>learn more</button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide data-hash="slide2">
-          <div>
-            <img src={portfolio1} alt="" className="w-full h-[200px]" />
-            <div>
-              <h2>this is portfolio</h2>
-              <button>learn more</button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide data-hash="slide3">
-          <div className="w-full h-[80%] overflow-hidden">
-            <img src={portfolio1} alt="" className="w-full h-[200px]" />
-            <div>
-              <h2>this is portfolio</h2>
-              <button>learn more</button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide data-hash="slide4">
-          <div className="w-full h-[80%] overflow-hidden">
-            <img src={portfolio1} alt="" className="w-full h-[200px]" />
-            <div>
-              <h2>this is portfolio</h2>
-              <button>learn more</button>
-            </div>
-          </div>
-        </SwiperSlide>
+        {portfolioData.map((portfolio) => (
+          <SwiperSlide key={portfolio.id}>
+            <PortfolioCard portfolio={portfolio} />
+          </SwiperSlide>
+        ))}
+
         <PortfolioSwiperButtons />
       </Swiper>
     </>
