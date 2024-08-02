@@ -10,6 +10,7 @@ import PortfolioSection from "./components/portfolio/PortfolioSection";
 import PricingSection from "./components/pricing/PricingSection";
 import ServiceSection from "./components/service/ServiceSection";
 import WorkExperienceSection from "./components/workExperience/WorkExperienceSection";
+import BackToTop from "./components/bactToTopBotton/BackToTop";
 
 function App() {
   const heroRef = useRef();
@@ -89,6 +90,7 @@ function App() {
       />
       <Blog ref={blogRef} setCurrentActiveNav={setCurrentActiveNav} />
       <Footer onClickScrollHandler={handleOnClickScroll} />
+      <BackToTop/>
     </div>
   );
 }
