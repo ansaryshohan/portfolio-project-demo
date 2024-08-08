@@ -7,9 +7,8 @@ function BackToTop() {
     const handleBtnShow = () => {
       if (window.scrollY >= 300) {
         setBtnShow(true);
-      }
-      else{
-        setBtnShow(false)
+      } else {
+        setBtnShow(false);
       }
     };
 
