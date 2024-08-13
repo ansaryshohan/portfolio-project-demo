@@ -4,22 +4,40 @@ import diamondIcon from "../../assets/diamond.svg";
 import heroImg from "../../assets/profile-pic.jpg";
 import psIcon from "../../assets/ps-icon.svg";
 import HeroIconDiv from "./HeroIconDiv";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+// import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
+import {easeInOut, motion} from "framer-motion"
 
 const HeroImageDiv = () => {
 
-  useGSAP(() => {
-    const tl = gsap.timeline();
-    tl.from(".hero-icon", {
-      x: -10,
-      y: -10,
-      duration: 3,
-      repeat: -1,
-      ease: "sine.inOut",
-      yoyo: true,
-    });
-  });
+  const IconVariant = {
+    initial:{
+      x:10,
+      y:10
+    },
+    animate:{
+      x:-10,
+      y:-10,
+      transition:{
+        duration:1.5,
+        repeat:Infinity,
+        repeatType: "reverse",
+        ease: easeInOut,
+      }
+    }
+  } 
+
+  // useGSAP(() => {
+  //   const tl = gsap.timeline();
+  //   tl.from(".hero-icon", {
+  //     x: -10,
+  //     y: -10,
+  //     duration: 3,
+  //     repeat: -1,
+  //     ease: "sine.inOut",
+  //     yoyo: true,
+  //   });
+  // });
 
   return (
     <div className="lg:w-1/2 h-full flex justify-center items-center">
@@ -32,18 +50,18 @@ const HeroImageDiv = () => {
                 className="w-full object-cover object-center"
               />
             </div>
-            {/* icon images */}
-            <div className="absolute top-12 left-4 hero-icon">
+            {/* icon images that will float with animation */}
+            <motion.div className="absolute top-20 left-4" variants={IconVariant} initial="initial" animate="animate" >
             <HeroIconDiv icon={psIcon}/>
-            </div>
-            <div className="absolute top-12 right-5 hero-icon">
+            </motion.div>
+            <motion.div className="absolute top-20 right-5" variants={IconVariant} initial="initial" animate="animate">
               <HeroIconDiv icon={aiIcon} />
-            </div>
-            <div className="absolute bottom-16 right-10 hero-icon">
+            </motion.div>
+            <motion.div className="absolute bottom-16 right-10" variants={IconVariant} initial="initial" animate="animate">
               <HeroIconDiv icon={diamondIcon} />
-            </div>
+            </motion.div>
             {/* floating text div */}
-            <div className="bg-white flex justify-center gap-4 items-center  font-semibold px-2 py-4 lg:px-6 lg:py-2  rounded-2xl lg:rounded-[40px] absolute bottom-16 left-0 hero-icon">
+            <motion.div className="bg-white flex justify-center gap-4 items-center  font-semibold px-2 py-4 lg:px-6 lg:py-2  rounded-2xl lg:rounded-[40px] absolute bottom-16 left-0" variants={IconVariant} initial="initial" animate="animate">
               <div className="font-extrabold">
                 <GoShieldCheck color="#59C378" size={50} />
               </div>
@@ -55,7 +73,7 @@ const HeroImageDiv = () => {
                   Complete Project
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
   );
