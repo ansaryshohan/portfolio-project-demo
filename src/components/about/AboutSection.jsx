@@ -14,7 +14,7 @@ const AboutSection = forwardRef(({setCurrentActiveNav}, ref) => {
 
   return (
     <div
-      className="w-full min-h-screen gradient-to-left relative pt-24 md:pt-60 pb-32 z-10"
+      className="w-full min-h-screen gradient-to-left relative pt-24 md:pt-32 pb-32 z-10"
       ref={ref}
     >
       {/* shapes of the background 1*/}

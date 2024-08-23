@@ -5,12 +5,12 @@ import AboutSection from "./components/about/AboutSection";
 import ServiceSection from "./components/service/ServiceSection";
 import WorkExperienceSection from "./components/workExperience/WorkExperienceSection";
 import PortfolioSection from "./components/portfolio/PortfolioSection";
-// import Blog from "./components/blog/Blog";
 // import ReviewSection from "./components/clientSay/ReviewSection";
+import PricingSection from "./components/pricing/PricingSection";
 // import ContactSection from "./components/contact/ContactSection";
-// import PricingSection from "./components/pricing/PricingSection";
-// import BackToTop from "./components/bactToTopButton/BackToTop";
+// import Blog from "./components/blog/Blog";
 // import Footer from "./components/Footer/Footer";
+// import BackToTop from "./components/bactToTopButton/BackToTop";
 
 function App() {
   const heroRef = useRef();
@@ -82,9 +82,9 @@ function App() {
         ref={portfolioRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />
-      {/*<ReviewSection />
+      {/* <ReviewSection /> */}
       <PricingSection />
-      <ContactSection
+      {/*<ContactSection
         ref={contactRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />
