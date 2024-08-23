@@ -14,7 +14,7 @@ const AboutSection = forwardRef(({setCurrentActiveNav}, ref) => {
 
   return (
     <div
-      className="w-full min-h-screen gradient-to-left relative pt-60 pb-32 z-10"
+      className="w-full min-h-screen gradient-to-left relative pt-24 md:pt-60 pb-32 z-10"
       ref={ref}
     >
       {/* shapes of the background 1*/}
@@ -26,17 +26,17 @@ const AboutSection = forwardRef(({setCurrentActiveNav}, ref) => {
         <img src={rightShape} alt="background curve shape of about" />
       </div>
       {/* content of this section */}
-      <div className="container md:px-20 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-10 h-full">
+      <div className="container md:px-20 flex flex-col items-center lg:flex-row lg:justify-between lg:items-center gap-10 h-full">
         {/* image type text div -left section */}
         <LeftAboutSection />
         {/* text div of about -right section */}
         <div className="w-full lg:w-7/12 px-2">
           {/* heading of -right section */}
-          <div className="flex flex-col gap-5 mb-10">
-            <h3 className="text-5xl font-semibold text-heading-color ">
+          <div className="flex flex-col items-center lg:items-left gap-5 mb-10">
+            <h3 className="text-3xl md:text-5xl font-semibold text-heading-color text-center lg:text-left">
               My Advantage
             </h3>
-            <p className="text-base font-medium text-primary-text-color">
+            <p className="text-sm sm:text-base font-medium text-primary-text-color text-center lg:text-left">
               Must explain to you how all this mistaken idea of denouncing
               pleasure and praising pain was born and I will give you a complete
               account the system and expound the actual and praising pain was

@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import HeroSection from "./components/Hero/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
-// import AboutSection from "./components/about/AboutSection";
+import AboutSection from "./components/about/AboutSection";
 // import Blog from "./components/blog/Blog";
 // import ReviewSection from "./components/clientSay/ReviewSection";
 // import ContactSection from "./components/contact/ContactSection";
@@ -72,8 +72,8 @@ function App() {
         currentActiveNav={currentActiveNav}
       />
       <HeroSection ref={heroRef} setCurrentActiveNav={setCurrentActiveNav} />
-      {/* <AboutSection ref={aboutRef} setCurrentActiveNav={setCurrentActiveNav} />
-      <ServiceSection
+     <AboutSection ref={aboutRef} setCurrentActiveNav={setCurrentActiveNav} />
+      {/*  <ServiceSection
         ref={serviceRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />

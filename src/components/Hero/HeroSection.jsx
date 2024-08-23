@@ -12,7 +12,7 @@ const HeroSection = forwardRef(({setCurrentActiveNav}, ref) => {
 
   return (
     <section
-      className="w-full min-h-screen gradient-to-right pt-48 pb-20 "
+      className="w-full min-h-screen gradient-to-right pt-28 sm:pt-36 lg:pt-48 pb-20"
       ref={ref}
     >
       <div className="flex flex-col justify-between items-center gap-10 lg:flex-row container md:px-20 w-full h-full">

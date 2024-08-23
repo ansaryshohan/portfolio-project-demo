@@ -2,7 +2,7 @@ import SingleAboutSkillCard from "./SingleAboutSkillCard";
 
 const AboutSkillCards = () => {
   return (
-    <div className="w-full flex flex-wrap justify-between gap-8 ">
+    <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-8 ">
       {/* card 1 */}
       <SingleAboutSkillCard
         textColor={"text-service-golden-color"}
