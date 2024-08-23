@@ -57,17 +57,17 @@ const HeroImageDiv = () => {
             <motion.div className="absolute top-20 right-5 hidden md:block" variants={IconVariant} initial="initial" animate="animate">
               <HeroIconDiv icon={aiIcon} />
             </motion.div>
-            <motion.div className="absolute md:bottom-10 md:-right-3 lg:bottom-5 lg:right-2 hidden md:block" variants={IconVariant} initial="initial" animate="animate">
+            <motion.div className="absolute md:bottom-10 md:-right-3 lg:bottom-20 lg:-right-2 hidden md:block" variants={IconVariant} initial="initial" animate="animate">
               <HeroIconDiv icon={diamondIcon} />
             </motion.div>
             {/* floating text div */}
-            <motion.div className="bg-white md:flex justify-center gap-2 items-center  font-semibold px-6 py-3  rounded-2xl lg:rounded-[40px] absolute md:bottom-10 md:left-2 lg:bottom-5 lg:-left-4 hidden" variants={IconVariant} initial="initial" animate="animate">
+            <motion.div className="bg-white md:flex justify-center gap-2 items-center  font-semibold px-6 py-3  rounded-2xl lg:rounded-[40px] absolute md:bottom-10 md:left-2 lg:bottom-20 lg:-left-4 hidden" variants={IconVariant} initial="initial" animate="animate">
               <div className="font-extrabold">
                 <GoShieldCheck color="#59C378" size={30} />
               </div>
               <div className="flex flex-col w-10/12">
                 <h3 className="font-semibold text-xl text-heading-color">
-                  150+
+                  50+
                 </h3>
                 <p className="font-medium text-sm text-light-text-color">
                   Complete Project
