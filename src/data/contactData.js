@@ -1,19 +1,19 @@
 const contactData=[
   {
     id:1,
-    title:"25 North Street,Dubai",
+    title:"Mirpur, Dhaka-1216",
     name:"Office Address",
     icon:"fi-rs-marker",
   },
   {
     id:2,
-    title:"info@elito.com",
+    title:"info@ansary.com",
     name:"Office Email",
     icon:"fi-br-clip-mail",
   },
   {
     id:3,
-    title:"+91 256-987-239",
+    title:"+880194387688",
     name:"Official Number",
     icon:"fi-rr-phone-call",
   },

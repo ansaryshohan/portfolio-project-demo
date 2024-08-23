@@ -8,8 +8,8 @@ function ContactCard({ contact }) {
 
       <div className="flex justify-start items-center gap-4">
         {/* icon div */}
-        <div className="service-icon-div h-20 w-20 rounded-full flex justify-center items-center text-3xl font-normal text-service-golden-color">
-          <div className="text-center">
+        <div className="service-icon-div h-20 w-20 rounded-full grid place-content-center text-3xl font-normal text-service-golden-color">
+          <div className="grid place-content-center">
             <i className={`fi ${icon}`}></i>
           </div>
         </div>

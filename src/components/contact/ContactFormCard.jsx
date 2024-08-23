@@ -103,7 +103,7 @@ function ContactFormCard() {
                 <div>
                   {" "}
                   <button
-                    className="bg-primary-theme-color flex items-center justify-center gap-4 text-white font-semibold px-2 py-4 lg:px-8 lg:py-4  rounded-2xl lg:rounded-[40px]"
+                    className="bg-primary-theme-color flex items-center justify-center gap-2 sm:gap-4 text-white font-semibold text-sm sm:text-base px-3 py-2 lg:px-8 lg:py-4  rounded-3xl lg:rounded-[40px]"
                     type="submit"
                   >
                     Submit Now <IoArrowForward />
