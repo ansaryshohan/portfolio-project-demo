@@ -17,8 +17,8 @@ function BlogSlider() {
                 spaceBetween: 10,
               },
               768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 2,
+                spaceBetween: 10,
               },
               1024: {
                 slidesPerView: 3,
@@ -30,7 +30,7 @@ function BlogSlider() {
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
-            speed={1200}
+            speed={2000}
             centeredSlides={true}
             grabCursor={true}
             // onMouseEnter={{

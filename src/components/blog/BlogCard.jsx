@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 function BlogCard({blog}) {
   const{title,date,image}=blog;
   return (
-    <div className="w-full text-left rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
+    <div className="w-5/6 text-left rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
       <img
         src={image}
         alt={title}

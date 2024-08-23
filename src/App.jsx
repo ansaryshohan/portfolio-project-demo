@@ -8,7 +8,7 @@ import PortfolioSection from "./components/portfolio/PortfolioSection";
 // import ReviewSection from "./components/clientSay/ReviewSection";
 import PricingSection from "./components/pricing/PricingSection";
 import ContactSection from "./components/contact/ContactSection";
-// import Blog from "./components/blog/Blog";
+import Blog from "./components/blog/Blog";
 // import Footer from "./components/Footer/Footer";
 // import BackToTop from "./components/bactToTopButton/BackToTop";
 
@@ -88,8 +88,8 @@ function App() {
         ref={contactRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />
-      {/* <Blog ref={blogRef} setCurrentActiveNav={setCurrentActiveNav} />
-      <Footer onClickScrollHandler={handleOnClickScroll} />
+       <Blog ref={blogRef} setCurrentActiveNav={setCurrentActiveNav} />
+      {/*<Footer onClickScrollHandler={handleOnClickScroll} />
       <BackToTop/> */}
     </div>
   );

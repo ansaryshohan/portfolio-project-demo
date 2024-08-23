@@ -14,7 +14,7 @@ const ContactSection = forwardRef(({ setCurrentActiveNav }, ref) => {
 
   return (
     <section className="bg-service-bgColor pb-20" ref={ref}>
-      <div className="container md:px-20">
+      <div className="container md:px-10 lg:px-20">
         {/* === top heading og the section=== */}
         <TopHeading
           title={"Let’s Talk"}
@@ -23,13 +23,13 @@ const ContactSection = forwardRef(({ setCurrentActiveNav }, ref) => {
           }
         />
         {/* === section content ===== */}
-        <div className="container md:px-10 flex flex-col md:flex-row justify-center items-stretch gap-2">
+        <div className="container md:px-10 flex flex-col lg:flex-row justify-center items-stretch gap-2">
           {/* form div */}
-          <div className="w-full md:w-1/2 border border-[#ebebeb] border-solid shadow-xl rounded-md bg-white md:flex-1">
+          <div className="w-full lg:w-1/2 border border-[#ebebeb] border-solid shadow-xl rounded-md bg-white md:flex-1">
             <ContactFormCard />
           </div>
           {/* single components div */}
-          <div className="w-full md:w-1/2 flex flex-row flex-wrap sm:flex-nowrap sm:flex-col justify-between items-center gap-5">
+          <div className="w-full lg:w-1/2 flex flex-col justify-between items-center gap-5">
             {contactData.map((contact) => (
               <ContactCard key={contact.id} contact={contact} />
             ))}
