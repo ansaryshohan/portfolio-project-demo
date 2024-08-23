@@ -3,12 +3,12 @@ import HeroSection from "./components/Hero/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 import AboutSection from "./components/about/AboutSection";
 import ServiceSection from "./components/service/ServiceSection";
+import WorkExperienceSection from "./components/workExperience/WorkExperienceSection";
 // import Blog from "./components/blog/Blog";
 // import ReviewSection from "./components/clientSay/ReviewSection";
 // import ContactSection from "./components/contact/ContactSection";
 // import PortfolioSection from "./components/portfolio/PortfolioSection";
 // import PricingSection from "./components/pricing/PricingSection";
-// import WorkExperienceSection from "./components/workExperience/WorkExperienceSection";
 // import BackToTop from "./components/bactToTopButton/BackToTop";
 // import Footer from "./components/Footer/Footer";
 
@@ -77,8 +77,8 @@ function App() {
         ref={serviceRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />
-      {/*<WorkExperienceSection />
-      <PortfolioSection
+      <WorkExperienceSection />
+      {/*<PortfolioSection
         ref={portfolioRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />
