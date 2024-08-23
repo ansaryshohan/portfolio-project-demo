@@ -4,10 +4,10 @@ import Navbar from "./components/Navbar/Navbar";
 import AboutSection from "./components/about/AboutSection";
 import ServiceSection from "./components/service/ServiceSection";
 import WorkExperienceSection from "./components/workExperience/WorkExperienceSection";
+import PortfolioSection from "./components/portfolio/PortfolioSection";
 // import Blog from "./components/blog/Blog";
 // import ReviewSection from "./components/clientSay/ReviewSection";
 // import ContactSection from "./components/contact/ContactSection";
-// import PortfolioSection from "./components/portfolio/PortfolioSection";
 // import PricingSection from "./components/pricing/PricingSection";
 // import BackToTop from "./components/bactToTopButton/BackToTop";
 // import Footer from "./components/Footer/Footer";
@@ -78,11 +78,11 @@ function App() {
         setCurrentActiveNav={setCurrentActiveNav}
       />
       <WorkExperienceSection />
-      {/*<PortfolioSection
+      <PortfolioSection
         ref={portfolioRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />
-      <ReviewSection />
+      {/*<ReviewSection />
       <PricingSection />
       <ContactSection
         ref={contactRef}

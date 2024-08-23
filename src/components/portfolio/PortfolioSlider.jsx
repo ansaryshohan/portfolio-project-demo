@@ -17,7 +17,7 @@ const PortfolioSlider = () => {
             spaceBetween:30
           },
           768:{
-            slidesPerView:3,
+            slidesPerView:2,
             spaceBetween:30
           },
           1024:{
@@ -26,11 +26,11 @@ const PortfolioSlider = () => {
           },
         }}
         autoplay={{
-          delay: 800,
+          delay: 1000,
           pauseOnMouseEnter: true,
           disableOnInteraction: false,
         }}
-        speed={1500}
+        speed={2000}
         modules={[ Autoplay]}
         className="mySwiper "
       >
