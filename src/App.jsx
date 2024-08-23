@@ -2,12 +2,12 @@ import { useRef, useState } from "react";
 import HeroSection from "./components/Hero/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 import AboutSection from "./components/about/AboutSection";
+import ServiceSection from "./components/service/ServiceSection";
 // import Blog from "./components/blog/Blog";
 // import ReviewSection from "./components/clientSay/ReviewSection";
 // import ContactSection from "./components/contact/ContactSection";
 // import PortfolioSection from "./components/portfolio/PortfolioSection";
 // import PricingSection from "./components/pricing/PricingSection";
-// import ServiceSection from "./components/service/ServiceSection";
 // import WorkExperienceSection from "./components/workExperience/WorkExperienceSection";
 // import BackToTop from "./components/bactToTopButton/BackToTop";
 // import Footer from "./components/Footer/Footer";
@@ -72,12 +72,12 @@ function App() {
         currentActiveNav={currentActiveNav}
       />
       <HeroSection ref={heroRef} setCurrentActiveNav={setCurrentActiveNav} />
-     <AboutSection ref={aboutRef} setCurrentActiveNav={setCurrentActiveNav} />
-      {/*  <ServiceSection
+      <AboutSection ref={aboutRef} setCurrentActiveNav={setCurrentActiveNav} />
+      <ServiceSection
         ref={serviceRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />
-      <WorkExperienceSection />
+      {/*<WorkExperienceSection />
       <PortfolioSection
         ref={portfolioRef}
         setCurrentActiveNav={setCurrentActiveNav}

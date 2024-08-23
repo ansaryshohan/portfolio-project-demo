@@ -39,8 +39,8 @@ const ServiceSection = forwardRef(({setCurrentActiveNav}, ref) => {
   }
 
   return (
-    <section className="w-full min-h-screen bg-service-bgColor  pb-20" ref={ref}>
-      <div className="container md:px-20 w-full h-full">
+    <section className="w-full min-h-screen bg-service-bgColor pb-20" ref={ref}>
+      <div className="sm:container md:px-20 w-full h-full">
         {" "}
         <TopHeading
           title={"Popular Services"}
