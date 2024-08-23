@@ -24,13 +24,13 @@ function BackToTop() {
 
   return (
     <div
-      className={btnShow ? "block fixed bottom-10 right-2 z-[99]" : "hidden"}
+      className={btnShow ? "block fixed bottom-10 -right-1 sm:right-2 z-[99]" : "hidden"}
     >
       <button
         onClick={handleClick}
-        className="w-14 h-14  rounded-full text-center border-2 border-green-600 bg-primary-theme-color text-white  text-lg font-medium mr-10"
+        className="w-10 h-10 sm:w-14 sm:h-14  rounded-full text-center border-2 border-green-600 bg-primary-theme-color text-white  text-lg font-medium mr-3 sm:mr-10 grid place-content-center"
       >
-        <i className="fi fi-sr-arrow-small-up text-4xl"></i>
+        <i className="fi fi-sr-arrow-small-up text-2xl sm:text-4xl"></i>
       </button>
     </div>
   );
