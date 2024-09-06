@@ -6,37 +6,37 @@ import img6 from "../../assets/img-6.jpg";
 
 function ClientImage({ clientImage }) {
   return (
-    <div className=" w-2/5 p-10">
-      <div className=" w-80 h-80 sm:w-[420px] sm:h-[420px] rounded-full border-2 p-10 border-[#0000000d] flex items-center justify-center">
-        <div className="w-full relative rounded-full border-2 p-10 bg-amber-300/10 border-[#0000000d] flex items-center justify-center">
+    <div className="w-full sm:w-4/5 lg:w-2/5 pt-10 md:p-10 grid place-content-center">
+      <div className="w-72 h-72 w md:w-80 md:h-80  rounded-full border-2 p-6 lg:p-10 border-[#0000000d] flex items-center justify-center">
+        <div className="w-full relative rounded-full border-2 p-6 lg:p-10 bg-amber-300/10 border-[#0000000d] flex items-center justify-center">
           {/* float images */}
           <img
             src={img2}
             alt="client 2"
-            className="w-20 h-20 rounded-full absolute top-0 left-0"
+            className="w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full absolute top-0 left-0"
           />
           <img
             src={img3}
             alt="client 2"
-            className="w-20 h-20 rounded-full absolute bottom-[20%] left-[-10%]"
+            className="w-10 h-10 md:w-14 md:h-14 lg:h-20 lg:w-20 rounded-full absolute bottom-[20%] left-[-10%]"
           />
           <img
             src={img4}
             alt="client 2"
-            className="w-20 h-20 rounded-full absolute top-0 right-0"
+            className="w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full absolute top-0 right-0"
           />
           <img
             src={img5}
             alt="client 2"
-            className="w-20 h-20 rounded-full absolute bottom-[10%] right-[-5%]"
+            className="w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full absolute bottom-[10%] right-[-5%]"
           />
           <img
             src={img6}
             alt="client 2"
-            className="w-20 h-20 rounded-full absolute bottom-[-15%] left-[50%] translate-x-[-50%]"
+            className="w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full absolute bottom-[-15%] left-[50%] translate-x-[-50%]"
           />
           {/* main image div */}
-          <div className="w-full rounded-full  overflow-hidden border-2 p-7 border-[#0000001f] flex items-center justify-center ">
+          <div className="w-full rounded-full  overflow-hidden border-2 p-4 md:p-7 border-[#0000001f] flex items-center justify-center ">
             <img src={clientImage} alt="client img" className="w-full rounded-full transition-all duration-700" />
           </div>
         </div>

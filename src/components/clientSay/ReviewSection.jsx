@@ -27,10 +27,10 @@ function ReviewSection() {
   }, []);
 
   return (
-    <section className="w-full h-screen bg-white relative">
-      <div className="review-bg-shape"></div>
+    <section className="w-full min-h-screen bg-white relative">
+      <div className="review-bg-shape hidden lg:block"></div>
       <div className="absolute z-10 h-full w-full bg-section-bgColor "></div>
-      <div className="container md:px-10 absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]  z-20 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div className="container lg:px-10 relative lg:absolute lg:top-[50%] lg:translate-y-[-50%] lg:left-[50%] lg:translate-x-[-50%]  z-20 flex flex-col lg:flex-row justify-between items-center gap-8">
         {/* image div */}
         <ClientImage clientImage={activeSlideData?.image} />
         {/* content div */}
@@ -38,7 +38,7 @@ function ReviewSection() {
           rewind={true}
           loop={true}
           modules={[Navigation]}
-          className="mySwiper w-3/5 relative"
+          className="mySwiper w-4/5 lg:w-3/5 relative"
           onSlideChange={handleSlideChange}
           ref={swiperRef}
         >

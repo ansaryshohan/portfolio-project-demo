@@ -1,6 +1,6 @@
 function UpperFooterColumn({ title, options,onClickScrollHandler }) {
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 pl-4 md:pl-0">
       <h3 className="tracking-wide capitalize dark:text-gray-900 text-white font-semibold text-2xl pb-2">
         {title}
       </h3>

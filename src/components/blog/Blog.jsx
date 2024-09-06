@@ -11,7 +11,7 @@ const Blog = forwardRef(({ setCurrentActiveNav }, ref) => {
   }, [isInView, setCurrentActiveNav]);
 
   return (
-    <section className="bg-primary-bgColor pb-96" ref={ref}>
+    <section className="bg-primary-bgColor pb-10 lg:pb-96" ref={ref}>
       <div className="container md:px-20">
         {/* === top heading og the section=== */}
         <TopHeading

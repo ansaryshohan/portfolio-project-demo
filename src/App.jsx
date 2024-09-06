@@ -5,11 +5,11 @@ import AboutSection from "./components/about/AboutSection";
 import ServiceSection from "./components/service/ServiceSection";
 import WorkExperienceSection from "./components/workExperience/WorkExperienceSection";
 import PortfolioSection from "./components/portfolio/PortfolioSection";
-// import ReviewSection from "./components/clientSay/ReviewSection";
+import ReviewSection from "./components/clientSay/ReviewSection";
 import PricingSection from "./components/pricing/PricingSection";
 import ContactSection from "./components/contact/ContactSection";
 import Blog from "./components/blog/Blog";
-// import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import BackToTop from "./components/bactToTopButton/BackToTop";
 
 function App() {
@@ -82,14 +82,14 @@ function App() {
         ref={portfolioRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />
-      {/* <ReviewSection /> */}
+      <ReviewSection />
       <PricingSection />
      <ContactSection
         ref={contactRef}
         setCurrentActiveNav={setCurrentActiveNav}
       />
        <Blog ref={blogRef} setCurrentActiveNav={setCurrentActiveNav} />
-      {/* <Footer onClickScrollHandler={handleOnClickScroll} /> */}
+      <Footer onClickScrollHandler={handleOnClickScroll} />
       <BackToTop/>
     </div>
   );
