@@ -7,7 +7,7 @@ import img6 from "../../assets/img-6.jpg";
 function ClientImage({ clientImage }) {
   return (
     <div className="w-full sm:w-4/5 lg:w-2/5 pt-10 md:p-10 grid place-content-center">
-      <div className="w-72 h-72 w md:w-80 md:h-80  rounded-full border-2 p-6 lg:p-10 border-[#0000000d] flex items-center justify-center">
+      <div className="w-72 h-72 md:w-80 md:h-80 lg:w-[420px] lg:h-[420px] rounded-full border-2 p-6 lg:p-10 border-[#0000000d] flex items-center justify-center">
         <div className="w-full relative rounded-full border-2 p-6 lg:p-10 bg-amber-300/10 border-[#0000000d] flex items-center justify-center">
           {/* float images */}
           <img
